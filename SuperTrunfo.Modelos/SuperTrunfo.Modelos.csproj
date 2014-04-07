@@ -37,7 +37,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Atributo.cs" />
+    <Compile Include="AtributoCollection.cs" />
     <Compile Include="Carta.cs" />
+    <Compile Include="CartaCollection.cs" />
+    <Compile Include="Jogada.cs" />
+    <Compile Include="Jogador.cs" />
+    <Compile Include="JogadorCollection.cs" />
+    <Compile Include="Mesa.cs" />
+    <Compile Include="MesaCollection.cs" />
+    <Compile Include="ModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
