@@ -6,10 +6,10 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace SuperTrunfo.Service
+namespace SuperTrunfo.ServiceController
 {
     [ServiceContract]
-    public interface IJogar
+    public interface IJogaService
     {
         [OperationContract]
         CartaCollection ObterCartas(Mesa mesa, Jogador jogador);

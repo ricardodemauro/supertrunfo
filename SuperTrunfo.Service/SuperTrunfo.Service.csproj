@@ -34,6 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ST.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -46,11 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IJogar.cs" />
+    <Compile Include="IMesa.cs" />
+    <Compile Include="IMesaService.cs" />
+    <Compile Include="MesaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Jogar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ST.snk" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SuperTrunfo.Modelos\SuperTrunfo.Modelos.csproj">

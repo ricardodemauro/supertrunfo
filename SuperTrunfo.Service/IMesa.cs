@@ -2,22 +2,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SuperTrunfo.Service
 {
     [ServiceContract]
-    public interface IJogar
+    interface IMesa
     {
         [OperationContract]
-        CartaCollection ObterCartas(Mesa mesa, Jogador jogador);
+        Mesa CriarMesa();
 
         [OperationContract]
-        bool Jogar(Mesa mesa, Jogador jogador, Carta atributo);
+        MesaCollection ObterMesa();
 
         [OperationContract]
-        Jogada KeepAlive(Mesa mesa, Jogador jogador);
+        void KeepAliveMesa(Jogador jogador, Mesa mesa);
+
+        [OperationContract]
+        bool EntrarMesa(Jogador jogador, Mesa mesa);
     }
 }

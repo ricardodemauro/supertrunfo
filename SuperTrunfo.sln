@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTrunfo.Web.Tests", "Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTrunfo.Service", "SuperTrunfo.Service\SuperTrunfo.Service.csproj", "{FABB778E-F8FA-46F0-A3EE-50D305BEC1E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTrunfo.ServiceController", "SuperTrunfo.ServiceController\SuperTrunfo.ServiceController.csproj", "{9F148B4B-227F-4F89-A948-665FEABE2B0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Itens", "Solution Itens", "{97DDFDF9-6543-46EB-BA8D-E9F79AAE04B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snk", "Snk", "{F3C3F868-BD82-4DB0-B781-918877DAFCAC}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Itens\Snk\ST.snk = Solution Itens\Snk\ST.snk
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +48,15 @@ Global
 		{FABB778E-F8FA-46F0-A3EE-50D305BEC1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FABB778E-F8FA-46F0-A3EE-50D305BEC1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FABB778E-F8FA-46F0-A3EE-50D305BEC1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F148B4B-227F-4F89-A948-665FEABE2B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F148B4B-227F-4F89-A948-665FEABE2B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F148B4B-227F-4F89-A948-665FEABE2B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F148B4B-227F-4F89-A948-665FEABE2B0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3C3F868-BD82-4DB0-B781-918877DAFCAC} = {97DDFDF9-6543-46EB-BA8D-E9F79AAE04B5}
 	EndGlobalSection
 EndGlobal
