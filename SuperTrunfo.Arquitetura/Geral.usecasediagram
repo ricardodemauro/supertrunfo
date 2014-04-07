@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e7eb6f52-e2ee-4efb-97fd-43da8ad7ae84" name="Geral" linkedPackageId="d7afe470-e0b4-44ce-9f6f-0886e4d3d892" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="43696b69-8f04-4d0a-a459-f5170d9e1785">
+      <profileInstance Id="7d49b186-bf2a-4db3-833a-331a0c687c7b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ab299b9d-4e35-4029-824b-523303c38726">
+      <profileInstance Id="56e61170-9340-4955-9609-5763053641e5" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7dafd193-dda1-4982-a665-f75c48c08412" name="Jogador 1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="488bc1c9-aa73-4db4-b788-b324a919b58e" />
+        <targetEnds>
+          <association Id="0802bf62-6474-44a5-8534-3ca9a77b8656" isDerived="false" sourceEndRoleName="Jogador 1" targetEndRoleName="Encontrar Sala" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d20add14-49d7-4d14-ab75-e655310fa45d" LastKnownName="Encontrar Sala" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="870b3560-31c6-4758-aa96-1ee00b6b75ec" name="Jogador 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a4dd8dbe-674f-403c-a6ab-d6d850fba985" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20b71993-373f-4e68-ba81-a2521e38ea1b" name="Encontrar Sala" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31dc8c91-be4d-4600-807e-0e720a488a0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="055d5cf4-2d97-4a96-b9dc-b505f0623706" />
+          </association>
+          <association Id="889500a4-8ab7-491f-aae6-519864cc718e" isDerived="false" sourceEndRoleName="Jogador 1" targetEndRoleName="Jogar" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="07905cfc-2af2-4085-96a2-09bbf2b698f5" LastKnownName="Jogar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1aa3a25-cab3-47b4-8ad3-ae84d02ff225" name="Jogador 1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f24cf0b-c869-46bc-a08f-55c4657a773e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36031b11-4678-4038-a7c3-21142650debf" name="Jogar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6fab3f3e-92be-42fc-8d26-8f391011c43d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6a0ba28c-4ea2-46cf-814e-ed239d0fd13c" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d20add14-49d7-4d14-ab75-e655310fa45d" name="Encontrar Sala" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ade2e840-d7c7-4265-8727-8ce5124ec5d3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07905cfc-2af2-4085-96a2-09bbf2b698f5" name="Jogar" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="df5b3845-b4fc-4d61-9752-d66daf2f41d9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d7afe470-e0b4-44ce-9f6f-0886e4d3d892" name="SuperTrunfo.Arquitetura">
+    <elementDefinition Id="d758455c-e481-4737-aecc-3a12734f9cf4" />
+  </package>
+</useCaseModelRoot>
