@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
-using SuperTrunfo.Modelos;
+﻿using SuperTrunfo.Modelos;
 
 namespace SuperTrunfo.ServiceController
 {
@@ -14,22 +8,21 @@ namespace SuperTrunfo.ServiceController
     {
         public Mesa CriarMesa()
         {
-            throw new NotImplementedException();
+            return new Mesa();
         }
 
         public MesaCollection ObterMesa()
         {
-            throw new NotImplementedException();
+            return new MesaCollection();
         }
 
         public void KeepAliveMesa(Jogador jogador, Mesa mesa)
         {
-            throw new NotImplementedException();
         }
 
         public bool EntrarMesa(Jogador jogador, Mesa mesa)
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }

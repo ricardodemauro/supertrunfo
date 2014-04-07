@@ -8,7 +8,6 @@ using System.Runtime.Serialization;
 
 namespace SuperTrunfo.Modelos
 {
-    [DataContract]
     public class AtributoCollection : List<Atributo>
     {
     }

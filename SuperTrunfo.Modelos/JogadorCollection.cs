@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace SuperTrunfo.Modelos
 {
-    [DataContract]
     public class JogadorCollection : ObservableCollection<Jogador>
     {
     }

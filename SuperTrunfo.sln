@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snk", "Snk", "{F3C3F868-BD8
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SuperTrunfo.Arquitetura", "SuperTrunfo.Arquitetura\SuperTrunfo.Arquitetura.modelproj", "{6E483BF5-97E0-40E0-9D90-14258DB05973}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperTrunfo.ServiceNegocios", "SuperTrunfo.ServiceNegocios\SuperTrunfo.ServiceNegocios.csproj", "{84279404-0354-461C-9F73-D5DA14AEDA9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{6E483BF5-97E0-40E0-9D90-14258DB05973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E483BF5-97E0-40E0-9D90-14258DB05973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E483BF5-97E0-40E0-9D90-14258DB05973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84279404-0354-461C-9F73-D5DA14AEDA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84279404-0354-461C-9F73-D5DA14AEDA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84279404-0354-461C-9F73-D5DA14AEDA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84279404-0354-461C-9F73-D5DA14AEDA9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
