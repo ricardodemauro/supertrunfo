@@ -23,12 +23,29 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="Componentes.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Componentes.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Componentes.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Dominio.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Dominio.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Dominio.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Geral.usecasediagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Geral.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Geral.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_2221.uml">
+      <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\SuperTrunfo.Arquitetura.uml">
       <SubType>Content</SubType>

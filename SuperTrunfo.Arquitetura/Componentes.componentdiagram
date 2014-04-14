@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b51fecb7-d410-4f68-aa72-1d63e466d944" name="Componentes" linkedPackageId="4eea9597-3670-459f-bd65-27c55d3a7f4e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="f31f69ac-6f43-4795-8fa9-b697f4789363">
+      <elementDefinition Id="efa70fc9-3043-4e34-8bea-a05f002162ed" />
+      <body>Disponibiliza cartas e regras gerais</body>
+      <annotatedElements>
+        <partMoniker Id="a1404664-43f0-4dad-ba1a-5d0667a365de" LastKnownName="MobileService" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="5fc64077-47fc-4b04-b8bf-2c556c3d43f9" name="Azure" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f2ea7b5-10d4-4899-bcda-b494131e7639" />
+        <ownedAttributesInternal>
+          <part Id="a1404664-43f0-4dad-ba1a-5d0667a365de" name="MobileService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="ecb94f9e-4565-47eb-930d-d96d31f9461f" />
+            <targetNamedElementsInternal>
+              <connector Id="62154674-18b5-462e-b16f-bff7b631850a" isLeaf="false" isStatic="false">
+                <partMoniker Id="670a733c-a0ba-46fd-8bef-c757a4d798e1" LastKnownName="SQLServer" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="b22ca98e-b9b9-4ad8-acfb-2b83e157cc2b">
+                      <elementDefinition Id="58afb1e5-a2e8-4965-b3de-9d15dd9a7f7d" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="beb610ab-cb8f-44b1-b9c8-02fa3e1b7be9">
+                      <elementDefinition Id="884eb657-3b3d-4fc7-b73d-f37dcf00a2e7" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="05237fae-fabe-45ed-9d60-b39115a50da8" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="cee94f9f-1519-47ad-8364-8c06c7770476" LastKnownName="MobileService" />
+            </type_NamedElement>
+          </part>
+          <part Id="670a733c-a0ba-46fd-8bef-c757a4d798e1" name="SQLServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="f784c2e0-f489-4dcc-b75d-601ec97ce140" />
+            <type_NamedElement>
+              <componentMoniker Id="691d5b09-af47-4d3c-a781-8c4134edf865" LastKnownName="SQLServer" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b0f32d80-f55a-48c0-b0bf-dd2526498e81" name="Web" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="942419a4-0df5-43ae-a86a-cf2e16e9b61a" />
+        <suppliersInternal>
+          <dependency Id="ec5cfc3c-3daa-4a23-a70a-9991330580ec">
+            <componentMoniker Id="5fc64077-47fc-4b04-b8bf-2c556c3d43f9" LastKnownName="Azure" />
+            <elementDefinition Id="d9536ab0-5d2b-4725-9986-414036da93fd" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="cee94f9f-1519-47ad-8364-8c06c7770476" name="MobileService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="678fe2b2-e5f9-4472-83f6-f6a11f05f252" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="691d5b09-af47-4d3c-a781-8c4134edf865" name="SQLServer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1d4b6e7-4771-4abd-8e9c-620714ae7a5c" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="a803e6fe-9cb0-4799-8f59-2b7a2c8ad3e2" name="Mobile - Windows Phone" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dd47c873-8052-4725-a13e-98f368c85b30" />
+        <suppliersInternal>
+          <dependency Id="e98638f8-e7a1-49e2-bc6b-a9ea3eb46ec6">
+            <componentMoniker Id="5fc64077-47fc-4b04-b8bf-2c556c3d43f9" LastKnownName="Azure" />
+            <elementDefinition Id="25a0711f-8b54-4507-aff6-dc5a57114e0e" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="4eea9597-3670-459f-bd65-27c55d3a7f4e" name="SuperTrunfo.Arquitetura">
+    <elementDefinition Id="d758455c-e481-4737-aecc-3a12734f9cf4" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8897e5bc-16fa-4f26-a15e-c8d343909ffc">
+        <profileInstance Id="2768b037-8cb3-4009-ae8f-c5fc04164796" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="cd2f06b7-126b-4e51-8d36-b7360b55a2d8">
+        <profileInstance Id="43a84210-6019-4411-8e78-ff5b9a87ae2e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

@@ -11,7 +11,7 @@ namespace SuperTrunfo.Negocios
     {
         public MesaCollection ObterMesas()
         {
-var mesas =
+
         }
     }
 }

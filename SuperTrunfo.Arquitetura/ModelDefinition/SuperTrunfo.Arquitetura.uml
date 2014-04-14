@@ -1,8 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="d758455c-e481-4737-aecc-3a12734f9cf4"
   name="SuperTrunfo.Arquitetura" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="efa70fc9-3043-4e34-8bea-a05f002162ed">
+      <body>Disponibiliza cartas e regras gerais</body>
+      <annotatedElements>
+        <partMoniker
+          Id="ecb94f9e-4565-47eb-930d-d96d31f9461f"
+          LastKnownName="MobileService"
+          LastKnownLocation="SuperTrunfo.Arquitetura.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -126,6 +138,137 @@
         name="Jogar"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0f2ea7b5-10d4-4899-bcda-b494131e7639"
+        name="Azure"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <part
+            Id="ecb94f9e-4565-47eb-930d-d96d31f9461f"
+            name="MobileService"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <targetNamedElementsInternal>
+              <connector
+                Id="05237fae-fabe-45ed-9d60-b39115a50da8"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="f784c2e0-f489-4dcc-b75d-601ec97ce140"
+                  LastKnownName="SQLServer"
+                  LastKnownLocation="SuperTrunfo.Arquitetura.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="58afb1e5-a2e8-4965-b3de-9d15dd9a7f7d" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="884eb657-3b3d-4fc7-b73d-f37dcf00a2e7" />
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker
+                Id="678fe2b2-e5f9-4472-83f6-f6a11f05f252"
+                LastKnownName="MobileService"
+                LastKnownLocation="SuperTrunfo.Arquitetura.uml" />
+            </type_NamedElement>
+          </part>
+          <part
+            Id="f784c2e0-f489-4dcc-b75d-601ec97ce140"
+            name="SQLServer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="Composite"
+            isComposite="true">
+            <type_NamedElement>
+              <componentMoniker
+                Id="e1d4b6e7-4771-4abd-8e9c-620714ae7a5c"
+                LastKnownName="SQLServer"
+                LastKnownLocation="SuperTrunfo.Arquitetura.uml" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="942419a4-0df5-43ae-a86a-cf2e16e9b61a"
+        name="Web"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d9536ab0-5d2b-4725-9986-414036da93fd">
+            <componentMoniker
+              Id="0f2ea7b5-10d4-4899-bcda-b494131e7639"
+              LastKnownName="Azure"
+              LastKnownLocation="SuperTrunfo.Arquitetura.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="678fe2b2-e5f9-4472-83f6-f6a11f05f252"
+        name="MobileService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e1d4b6e7-4771-4abd-8e9c-620714ae7a5c"
+        name="SQLServer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d813ecd9-aff2-44e7-b272-a64228237024"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="dd47c873-8052-4725-a13e-98f368c85b30"
+        name="Mobile - Windows Phone"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="25a0711f-8b54-4507-aff6-dc5a57114e0e">
+            <componentMoniker
+              Id="0f2ea7b5-10d4-4899-bcda-b494131e7639"
+              LastKnownName="Azure"
+              LastKnownLocation="SuperTrunfo.Arquitetura.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a23b8647-31e0-4d93-83ff-e321953f56c3"
+        LastKnownName="Model"
+        LastKnownLocation="Package_2221.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

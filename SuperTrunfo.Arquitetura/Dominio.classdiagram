@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="eeba6e47-f851-4822-aff2-1192ee925d8d" name="Dominio" linkedPackageId="0100939a-0648-4597-b3a6-7998b038f4be" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dcb440da-9b99-4f91-854e-ecef0d943506">
+      <profileInstance Id="87e6a990-5835-40fa-ae2d-3316ee812a7c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2ebde105-d8df-465e-864f-cd5bedd01dfb">
+      <profileInstance Id="1f1f1125-0efb-4741-8a32-0c92a4d3aad7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0688541a-ed2b-4a20-bc65-37ec9524757c" name="Carta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7ab5c8ee-0dfd-489d-b85a-f19ea50d1066" />
+        <targetEnds>
+          <association Id="441c8895-d7e8-40df-b8a7-4eb10507aaf0" isDerived="false" sourceEndRoleName="Carta" targetEndRoleName="Atributo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0d51dafa-523c-4d90-b05e-46c8567f7329" LastKnownName="Atributo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2875e3e0-ada1-487f-a647-b81523219016" name="Carta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f6340f9-e6f6-47f0-8040-69196111d8e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30943303-45d4-44c5-9fba-7d1e65330355" name="Atributo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0f74bfea-441e-4790-b84d-506a956d52fe" name="Lower" value="n">
+                      <elementDefinition Id="eab06426-db8f-4246-92dc-ddffb37646e0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="867a88da-739f-40e8-a1da-0c36bb0c10cb" name="Upper" value="n">
+                      <elementDefinition Id="66afd15e-a3a4-4cdc-aad4-244cf5716844" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="dabd6f56-b0aa-492b-9eaa-8fedfa0eaebd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55377b75-b290-457f-a00f-b8975dd995ae" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="53dffe16-027a-42d1-9742-3a84bb9e01ee" name="Atributo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4188c2b1-a3e3-435c-a9c6-529d3ca52706" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7fcd2513-2217-478b-8bb8-8aac9b71977e" name="Mesa" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="305e2596-0955-455a-a079-bd11ca9eaefc" />
+        <targetEnds>
+          <association Id="97f4905a-47e6-4ee3-b743-15722d80c66e" isDerived="false" sourceEndRoleName="Mesa" targetEndRoleName="Jogador" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aaefcd56-1d25-40dd-8b75-78c87f85af6f" LastKnownName="Jogador" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1e5d6e6-ab45-4f38-95a9-f48911d3ddc1" name="Mesa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5c775661-b332-40a2-8d55-8827ed91257b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a8e4d924-66c9-4442-8e1c-1b821eb6e529" name="Jogador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="89624b51-8943-4642-bd2b-7b3b6d0c79c8" name="Lower" value="n">
+                      <elementDefinition Id="8946422b-f41c-4d11-ba06-b9c2a8facd44" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="54b713db-f6d6-47bb-af40-50bfb87d8ffd" name="Upper" value="n">
+                      <elementDefinition Id="77a280d4-9440-4259-bef6-3b97a76dfc42" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2ba8ef72-c23b-4cc9-aad0-40ea97650025" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc614246-9c01-46d6-bdcb-9ab481f06e6a" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="cddb7a29-78f3-429c-b51a-8a1ca59ef09c" name="Jogador" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35483233-bfc9-4e14-ab88-8ef90d5b3d83" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aaefcd56-1d25-40dd-8b75-78c87f85af6f" name="Jogador" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19e22ce4-ed46-4e12-986c-a520d854eb26" />
+        <targetEnds>
+          <association Id="a7498318-63cd-46c3-806f-002f8ec73783" isDerived="false" sourceEndRoleName="Jogador" targetEndRoleName="Carta" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0688541a-ed2b-4a20-bc65-37ec9524757c" LastKnownName="Carta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98475124-da33-4bfb-be3d-5c6d400889ba" name="Jogador" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f75f2459-d47b-4484-8a1f-0ce756d53d42" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5025bd64-a718-4731-a142-c61a1cbd8994" name="Carta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="25a030e3-0e24-4fed-804a-64d88246239e" name="Lower" value="n">
+                      <elementDefinition Id="4770a715-77ac-4e7b-a2d9-4a61d7c56673" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="625b4aa2-e7e3-4ec6-ac6f-49e3c9b28281" name="Upper" value="n">
+                      <elementDefinition Id="d0d13c2b-0edb-44a5-97e3-3a8bd2f59994" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fc9f4643-a40a-4c7d-b12c-8396dddf269b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="92ae48d1-1cdc-4fc3-bb79-f307deff7636" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e99ee0ef-d424-4376-83fa-12cd45a48b0d" name="Carta" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f2b41e2-e5a2-478a-94c7-daa427c0653c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0d51dafa-523c-4d90-b05e-46c8567f7329" name="Atributo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2ac6f646-f55a-4bfc-b8f3-2adddae26bc4" />
+        <ownedAttributesInternal>
+          <property Id="fd3572f8-f34b-47f7-ba38-d3cf3cafa211" name="Chave" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4a8dc6c7-be30-472b-b3df-56431dd17f0f" />
+          </property>
+          <property Id="44ab09e1-b822-4aed-8a78-1529e9de8e91" name="Valor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd1c304b-f36d-40d4-b56e-c7f2ddf859ca" />
+          </property>
+          <property Id="1e566184-7d64-4fea-8044-caa0a51729fd" name="Descricao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e1639c7c-88e0-498a-8302-e031372c6da8" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0100939a-0648-4597-b3a6-7998b038f4be" name="SuperTrunfo.Arquitetura">
+    <elementDefinition Id="d758455c-e481-4737-aecc-3a12734f9cf4" />
+  </package>
+</logicalClassDesignerModel>

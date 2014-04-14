@@ -89,10 +89,6 @@
       <Project>{85ea9d17-3954-469a-91d1-1dfa8fd50f0d}</Project>
       <Name>SuperTrunfo.Modelos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SuperTrunfo.Negocios\SuperTrunfo.Negocios.csproj">
-      <Project>{4660a74c-4877-4e24-983b-bb2b04b903f8}</Project>
-      <Name>SuperTrunfo.Negocios</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

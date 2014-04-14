@@ -43,7 +43,6 @@
     <None Include="ST.snk" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache.cs" />
     <Compile Include="Mesa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
